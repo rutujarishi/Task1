@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0765a46-59fc-4b58-97e0-8d9fa5e9b373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/demo/BeanLifecycleDemoBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/demo/BeanPostProcessorDemoBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackroute/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackroute/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/beans.xml" afterDir="false" />
@@ -96,12 +96,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/stackroute/Main.java</url>
-          <line>18</line>
+          <line>19</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/stackroute/Main.java</url>
-          <line>19</line>
+          <line>20</line>
           <properties class="com.stackroute.Main" method="main">
             <option name="EMULATED" value="true" />
           </properties>

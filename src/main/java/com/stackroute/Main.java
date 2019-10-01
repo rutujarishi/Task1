@@ -1,5 +1,6 @@
 package com.stackroute;
 import com.stackroute.demo.BeanLifecycleDemoBean;
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.domain.*;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
@@ -20,8 +21,10 @@ public class Main {
     public static void main( String[] args )
     {
         AbstractApplicationContext  context = new ClassPathXmlApplicationContext("beans.xml");
-        BeanLifecycleDemoBean appcontext= (BeanLifecycleDemoBean) context.getBean("Beanlifecycle");
-        System.out.println(appcontext);
+       // BeanLifecycleDemoBean appcontext= (BeanLifecycleDemoBean) context.getBean("Beanlifecycle");
+        //BeanPostProces appcontext1= (BeanPostProcessorDemoBean) context.getBean("Beanlifecycle");
+        //appcontext.getMessage();
+       // System.out.println(appcontext);
 
 //        AbstractApplicationContext  beanFactory = new ClassPathXmlApplicationContext("beans.xml");
 //        Movie movie= (Movie)beanFactory.getBean("Movie");

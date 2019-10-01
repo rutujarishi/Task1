@@ -13,7 +13,9 @@
     <bean id="Beanlifecycle" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="CustomInit" destroy-method="CustomDestroy">
         <property name="message" value="property "/>
     </bean>
-<!--    <bean class="java.lang.String" id="name">-->
+    <bean class = "com.stackroute.demo.BeanPostProcessorDemoBean" />
+
+    <!--    <bean class="java.lang.String" id="name">-->
 <!--        <-->
 <!--    </bean>-->
 <!--    <bean class="com.stackroute.domain.Actor" id="actor1">-->
