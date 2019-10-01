@@ -10,6 +10,9 @@
         <constructor-arg  name="gender" value="Female" />
         <constructor-arg name="age" value="29" />
     </bean>
+    <bean id="Beanlifecycle" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="CustomInit" destroy-method="CustomDestroy">
+        <property name="message" value="property "/>
+    </bean>
 <!--    <bean class="java.lang.String" id="name">-->
 <!--        <-->
 <!--    </bean>-->
