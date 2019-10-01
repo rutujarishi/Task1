@@ -5,20 +5,16 @@ public class Actor  {
     String gender;
     int age;
 
-    public void setName(String name) {
+    public Actor(String name, String gender, int age) {
         this.name = name;
-    }
-
-    public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public void setAge(int age) {
         this.age = age;
     }
 
+    public Actor(){}
+
     public void print()
     {
-        System.out.println("Name:"+ name + "gender:"+ gender + "Age:" +age);
+        System.out.println("Name:"+ name +  "gender:"+ gender + "Age:" +age);
     }
 }

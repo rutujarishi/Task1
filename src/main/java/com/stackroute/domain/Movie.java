@@ -2,27 +2,24 @@ package com.stackroute.domain;
 
 /**
  * Hello world!
- *
  */
-public class Movie
-{
+public class Movie {
 
     Actor actor;
-    public void setActor(Actor actor) {
+
+    public Movie(Actor actor) {
         this.actor = actor;
     }
 
- public void print()
- {
-  actor.print();
+    public Movie(){
 
- }
+    }
 
 
+    public void print() {
+        actor.print();
 
-
-
-
+    }
 
 
 }
