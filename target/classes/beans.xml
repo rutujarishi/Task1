@@ -5,29 +5,32 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean class="com.stackroute.domain.Actor" id="actor">
-        <constructor-arg name="name" value="Deepika" type="String" index="0"/>
-        <constructor-arg name="gender" value="Female" type="String" index="1"/>
-        <constructor-arg name="age" value="29" type="int" index="2"/>
-    </bean>
     <bean class="com.stackroute.domain.Actor" id="actor1">
-        <constructor-arg name="name" value="Priyanka"  type="String" index="0"/>
-        <constructor-arg name="gender" value="Female" type="String" index="1"/>
-        <constructor-arg name="age" value="34" type="int" index="2"/>
+        <constructor-arg name="name" value="Deepika" />
+        <constructor-arg  name="gender" value="Female" />
+        <constructor-arg name="age" value="29" />
     </bean>
-    <bean class="com.stackroute.domain.Actor" id="actor2">
-        <constructor-arg name="name" value="Ranveer" type="String" index="0"/>
-        <constructor-arg name="gender" value="Male" type="String" index="1"/>
-        <constructor-arg name="age" value="30" type="int" index="2"/>
-    </bean>
-    <bean class="com.stackroute.domain.Movie" id="Movie"  scope="singleton">
-        <constructor-arg name="actor" ref="actor"/>
-    </bean>
-    <bean class="com.stackroute.domain.Movie" id="Movie4"  >
-        <constructor-arg name="actor" ref="actor1"/>
-    </bean>
-    <bean class="com.stackroute.domain.Movie" name="Movie3,Movie2" scope="prototype">
-        <constructor-arg name="actor" ref="actor2"/>
+<!--    <bean class="java.lang.String" id="name">-->
+<!--        <-->
+<!--    </bean>-->
+<!--    <bean class="com.stackroute.domain.Actor" id="actor1">-->
+<!--        <constructor-arg name="name" value="Priyanka"  type="String" index="0"/>-->
+<!--        <constructor-arg name="gender" value="Female" type="String" index="1"/>-->
+<!--        <constructor-arg name="age" value="34" type="int" index="2"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.stackroute.domain.Actor" id="actor2">-->
+<!--        <constructor-arg name="name" value="Ranveer" type="String" index="0"/>-->
+<!--        <constructor-arg name="gender" value="Male" type="String" index="1"/>-->
+<!--        <constructor-arg name="age" value="30" type="int" index="2"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.stackroute.domain.Movie" id="Movie"  scope="singleton">-->
+<!--        <constructor-arg name="actor" ref="actor"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.stackroute.domain.Movie" id="Movie4"  >-->
+<!--        <constructor-arg name="actor" ref="actor1"/>-->
+<!--    </bean>-->
+    <bean id="Movie" class="com.stackroute.domain.Movie" autowire="constructor">
+<!--     <constructor-arg name ="actor" ref ="actor"/>-->
     </bean>
 
 </beans>

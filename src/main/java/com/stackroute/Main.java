@@ -17,37 +17,37 @@ public class Main {
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         Movie movie = context.getBean("Movie",Movie.class);
         movie.print();
-        Movie movie1 = context.getBean("Movie2",Movie.class);
-        movie1.print();
-       Movie movie2 = context.getBean("Movie3",Movie.class);
-       movie2.print();
-        Movie movie4 = context.getBean("Movie3",Movie.class);
-        movie4.print();
-        Movie movie5= context.getBean("Movie",Movie.class);
-        movie.print();
-        Movie movie6= context.getBean("Movie4",Movie.class);
-        movie6.print();
-
-
-        // scope prototype
-        if(movie2 == movie4)
-        {
-            System.out.println(true);
-        }
-        else
-        {
-            System.out.println(false);
-        }
-
-        // scope singleton
-        if(movie == movie5)
-        {
-            System.out.println(true);
-        }
-        else
-        {
-            System.out.println(false);
-        }
+//        Movie movie1 = context.getBean("Movie2",Movie.class);
+//        movie1.print();
+//       Movie movie2 = context.getBean("Movie3",Movie.class);
+//       movie2.print();
+//        Movie movie4 = context.getBean("Movie3",Movie.class);
+//        movie4.print();
+//        Movie movie5= context.getBean("Movie",Movie.class);
+//        movie.print();
+//        Movie movie6= context.getBean("Movie4",Movie.class);
+//        movie6.print();
+//
+//
+//        // scope prototype
+//        if(movie2 == movie4)
+//        {
+//            System.out.println(true);
+//        }
+//        else
+//        {
+//            System.out.println(false);
+//        }
+//
+//        // scope singleton
+//        if(movie == movie5)
+//        {
+//            System.out.println(true);
+//        }
+//        else
+//        {
+//            System.out.println(false);
+//        }
 
     }
 }
